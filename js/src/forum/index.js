@@ -1,8 +1,9 @@
+// commented by BlockCat (20.09.2021)
 import applyEditor from '../common/applyEditor';
-import addPreferences from './addPreferences';
+// import addPreferences from './addPreferences';
 
 app.initializers.add('askvortsov/flarum-rich-text', () => {
-  addPreferences();
+  // addPreferences();
   applyEditor();
 });
 

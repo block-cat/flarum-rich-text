@@ -22,9 +22,10 @@ return [
         ->css(__DIR__.'/resources/less/admin.less'),
     new Extend\Locales(__DIR__.'/resources/locale'),
 
-    (new Extend\User())->registerPreference('useRichTextEditor', 'boolval', true),
-    (new Extend\User())->registerPreference('richTextCompactParagraphs', 'boolval', false),
+    // commented by BlockCat (20.09.2021)
+    // (new Extend\User())->registerPreference('useRichTextEditor', 'boolval', true),
+    // (new Extend\User())->registerPreference('richTextCompactParagraphs', 'boolval', false),
 
-    (new Extend\Settings())
-        ->serializeToForum('toggleRichTextEditorButton', 'askvortsov-rich-text.toggle_on_editor', 'boolval', false),
+    // (new Extend\Settings())
+    //     ->serializeToForum('toggleRichTextEditorButton', 'askvortsov-rich-text.toggle_on_editor', 'boolval', false),
 ];
