@@ -55,7 +55,7 @@ export default function applyEditor() {
 
   override(TextEditor.prototype, 'buildEditor', function (original, dom) {
     // if (app.session.user.preferences().useRichTextEditor) {
-      return new ProseMirrorEditorDriver(dom, this.buildEditorParams());
+    return new ProseMirrorEditorDriver(dom, this.buildEditorParams());
     // }
 
     // return original(dom);

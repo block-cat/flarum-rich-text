@@ -58,10 +58,10 @@ export default function richTextKeymap(schema) {
   };
 
   const enterCommands = [considerDropdown, splitListItem(schema.nodes.list_item), smartExitCode];
-  
+
   // commented by BlockCat (20.09.2021)
   // if (app.session.user.preferences().richTextCompactParagraphs) {
-  //   enterCommands.push(smartInsertHardBreak);
+    enterCommands.push(smartInsertHardBreak);
   // }
 
   const handleEnter = chainCommands(...enterCommands);
